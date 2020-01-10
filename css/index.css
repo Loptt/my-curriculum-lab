@@ -1,14 +1,90 @@
-#header {
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
     text-align: center;
-    background-color: #5bf5e0;
-    margin: 0;
-    background-image: url("./../assets/header_background.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 400px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
 }
 
-#header h1 {
-    margin: 0;
+.demo .main-title {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
+.main-title .thin {
+    font-weight: 200;
+    font-size: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .demo .main-title {
+        font-size: 3em;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin-top: 50px;
+    color: #555555;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+h3 {
+    color: #397B8C ;
+}
+
+h5 {
+    color: #397B8C; 
+}
+.content {
+    width: 100%;
+    margin: 0px;
+}
+
+.habilidades {
+    width: 70%;
+}
+
+
+.icon-container {
+    text-align: center;
+}
+
+.decor-icon {
+    margin-top: 70px;
+    font-size: 200px;
+    color: #397B8C; 
+}
+
+.page-footer {
+    background-color: #397B8C; 
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.social-container {
+    margin: auto;
+}
